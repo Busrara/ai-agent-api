@@ -1,15 +1,6 @@
-     main       -> origin/main
-Auto-merging .gitignore
-CONFLICT (add/add): Merge conflict in .gitignore
-error: could not apply d5e1abf... Initial AI agent API
-hint: Resolve all conflicts manually, mark them as resolved with
-hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
-hint: You can instead skip this commit: run "git rebase --skip".
-hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
-Could not apply d5e1abf... Initial AI agent API
-(base) busracoban@Busra-MacBook-Air ai-agent % git push -u origin main
-To github-busrara:Busrara/ai-agent-api.git
- ! [rejected]        main -> main (non-fast-forward)
-error: failed to push some refs to 'github-busrara:Busrara/ai-agent-api.git'
-hint: Updates were rejected because a pushed branch tip is behind its remote
-hint: counterpart. Check out this bra
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store

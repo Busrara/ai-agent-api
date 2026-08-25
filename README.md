@@ -5,11 +5,81 @@ A production-ready AI Agent API built with **FastAPI, LangChain, and Groq**. It 
 
 ## Live Demo
 
-**Live API:** https://ai-agent-api-6ax6.onrender.com
+### Try the API with Swagger
 
-**Swagger UI:** https://ai-agent-api-6ax6.onrender.com/docs
+You can interact with the live API directly from the Swagger UI without installing anything locally.
 
-The API is deployed on Render and can be tested directly through the interactive Swagger interface.
+### 1. Open Swagger UI
+
+Go to:
+
+**https://ai-agent-api-6ax6.onrender.com/docs**
+
+### 2. Open the `/chat` endpoint
+
+Find:
+
+**POST `/chat`**
+
+Click on it to expand the endpoint.
+
+### 3. Click "Try it out"
+
+Click the **Try it out** button in the top-right corner of the request section.
+
+This will make the request body editable.
+
+### 4. Enter your message
+
+Use the following example:
+
+```json
+{
+  "message": "What is 15% of 240?"
+}
+```
+
+You can also try other requests, for example:
+
+```text
+What is the weather in Turin?
+```
+
+or:
+
+```text
+Search the web for the latest news about OpenAI.
+```
+
+### 5. Click "Execute"
+
+Click **Execute** to send the request to the live AI agent.
+
+The agent will analyze the request and decide whether it needs to use one of its available tools.
+
+### 6. View the response
+
+The response will appear under **Server response**.
+
+For example:
+
+```json
+{
+  "answer": "15% of 240 is 36."
+}
+```
+
+### Tool Calling Examples
+
+Try these examples to see the agent use different tools:
+
+| Request                                  | Expected Tool |
+| ---------------------------------------- | ------------- |
+| `What is 25% of 480?`                    | Calculator    |
+| `What is the weather in Turin?`          | Weather       |
+| `Search the web for the latest AI news.` | Web Search    |
+
+The agent automatically selects the appropriate tool based on the user's request.
 
 ## Overview
 
